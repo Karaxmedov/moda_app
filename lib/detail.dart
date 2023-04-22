@@ -66,28 +66,28 @@ class _DetailState extends State<Detail> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            const Text(
                               "LAMINATED",
                               style: TextStyle(
                                   fontSize: 22, fontWeight: FontWeight.bold),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5,
                             ),
-                            Text(
+                            const Text(
                               "Louis Vuitton",
                               style: TextStyle(
                                 fontSize: 16,
                                 color: Colors.grey,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
                             Container(
                               height: 55,
                               width: MediaQuery.of(context).size.width - 170,
-                              child: Text(
+                              child: const Text(
                                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
                                 style: TextStyle(
                                   fontSize: 16,
@@ -99,13 +99,13 @@ class _DetailState extends State<Detail> {
                         ),
                       ],
                     ),
-                    Divider(),
+                    const Divider(),
                     Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "6500 \$",
                             style: TextStyle(
                               fontSize: 16,
@@ -113,11 +113,11 @@ class _DetailState extends State<Detail> {
                             ),
                           ),
                           Container(
-                            padding: EdgeInsets.symmetric(horizontal: 20),
+                            padding: const EdgeInsets.symmetric(horizontal: 20),
                             child: FloatingActionButton(
                               onPressed: () {},
-                              child: Icon(Icons.arrow_forward_ios),
                               backgroundColor: Colors.brown,
+                              child: const Icon(Icons.arrow_forward_ios),
                             ),
                           ),
                         ],
@@ -139,7 +139,7 @@ class _DetailState extends State<Detail> {
                     borderRadius: BorderRadius.circular(8)),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                  children: const [
                     Text(
                       "Laminated",
                       style: TextStyle(fontSize: 16, color: Colors.white),

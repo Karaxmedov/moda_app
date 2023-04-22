@@ -193,10 +193,12 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                         InkWell(
                           onTap: () {
                             Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) =>
-                                        Detail(img: "assets/modelgrid1.jpeg")));
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    const Detail(img: "assets/modelgrid1.jpeg"),
+                              ),
+                            );
                           },
                           child: Hero(
                             tag: "assets/modelgrid1.jpeg",
@@ -222,10 +224,12 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             InkWell(
                               onTap: () {
                                 Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => Detail(
-                                            img: "assets/modelgrid2.jpeg")));
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const Detail(
+                                        img: "assets/modelgrid2.jpeg"),
+                                  ),
+                                );
                               },
                               child: Hero(
                                 tag: "assets/modelgrid2.jpeg",
@@ -244,16 +248,18 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
                             InkWell(
                               onTap: () {
                                 Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => Detail(
-                                            img: "assets/modelgrid3.jpeg")));
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const Detail(
+                                        img: "assets/modelgrid3.jpeg"),
+                                  ),
+                                );
                               },
                               child: Hero(
                                 tag: "assets/modelgrid3.jpeg",
@@ -276,7 +282,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                         )
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     Row(
@@ -296,7 +302,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                 color: Colors.brown),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 5,
                         ),
                         Container(
@@ -316,11 +322,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 10,
                     ),
-                    Divider(),
-                    SizedBox(
+                    const Divider(),
+                    const SizedBox(
                       height: 20,
                     ),
                     Row(
@@ -329,7 +335,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                           Icons.reply,
                           color: Colors.brown.withOpacity(0.3),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Text(
@@ -337,14 +343,14 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                           style:
                               TextStyle(color: Colors.brown.withOpacity(0.3)),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 25,
                         ),
                         Icon(
                           Icons.comment,
                           color: Colors.brown.withOpacity(0.3),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 10,
                         ),
                         Text(
@@ -357,11 +363,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                              Icon(
+                              const Icon(
                                 Icons.favorite,
                                 color: Colors.red,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 width: 10,
                               ),
                               Text(
